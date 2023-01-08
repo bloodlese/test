@@ -1,1041 +1,820 @@
+-- SETTINGS
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("BL00DHUB |  TROLL EXPLOIT  | Made By BL00DLESE", "BloodTheme")
+local Window = Library.CreateLib("YUNG HUB ++ | SL2 | BBH^", "DarkTheme")
 
-local FE = Window:NewTab("FE")
-local FESection = FE:NewSection("FE")
-FESection:NewToggle("FE Animations", "Use Moves on the battle field!", function(s)
-	loadstring(game:HttpGet('https://pastebin.com/raw/0MLPL32f'))()
-end)
-FESection:NewToggle("Fly", "Allows you fly!", function(s)
-	--ARCEUS X FLY V2 SCRIPT BY me_ozoneYT
-	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
-end)
-FESection:NewToggle("FE Avatar Animations", "Allows you to wear any animation (With extra) For Free!", function(s)
-	local AnimationChanger = Instance.new("ScreenGui")
-	local Main = Instance.new("Frame")
-	local TopBar = Instance.new("Frame")
-	local Close = Instance.new("TextButton")
-	local TextLabel = Instance.new("TextLabel")
-	local TextLabel_2 = Instance.new("TextLabel")
-	local NormalTab = Instance.new("Frame")
-	local A_Astronaut = Instance.new("TextButton")
-	local A_Bubbly = Instance.new("TextButton")
-	local A_Cartoony = Instance.new("TextButton")
-	local A_Elder = Instance.new("TextButton")
-	local A_Knight = Instance.new("TextButton")
-	local A_Levitation = Instance.new("TextButton")
-	local A_Mage = Instance.new("TextButton")
-	local A_Ninja = Instance.new("TextButton")
-	local A_Pirate = Instance.new("TextButton")
-	local A_Robot = Instance.new("TextButton")
-	local A_Stylish = Instance.new("TextButton")
-	local A_SuperHero = Instance.new("TextButton")
-	local A_Toy = Instance.new("TextButton")
-	local A_Vampire = Instance.new("TextButton")
-	local A_Werewolf = Instance.new("TextButton")
-	local A_Zombie = Instance.new("TextButton")
-	local Category = Instance.new("TextLabel")
-	local SpecialTab = Instance.new("Frame")
-	local A_Patrol = Instance.new("TextButton")
-	local A_Confident = Instance.new("TextButton")
-	local A_Popstar = Instance.new("TextButton")
-	local A_Cowboy = Instance.new("TextButton")
-	local A_Ghost = Instance.new("TextButton")
-	local A_Sneaky = Instance.new("TextButton")
-	local A_Princess = Instance.new("TextButton")
-	local Category_2 = Instance.new("TextLabel")
-	local OtherTab = Instance.new("Frame")
-	local Category_3 = Instance.new("TextLabel")
-	local A_None = Instance.new("TextButton")
-	local A_Anthro = Instance.new("TextButton")
-	local Animate = game.Players.LocalPlayer.Character.Animate
-
-	AnimationChanger.Name = "AnimationChanger"
-	AnimationChanger.Parent = game:WaitForChild("CoreGui")
-	AnimationChanger.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-	Main.Name = "Main"
-	Main.Parent = AnimationChanger
-	Main.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
-	Main.BorderSizePixel = 0
-	Main.Position = UDim2.new(0.421999991, 0, -1, 0)
-	Main.Size = UDim2.new(0, 300, 0, 250)
-	Main.Active = true
-	Main.Draggable = true
-
-	TopBar.Name = "TopBar"
-	TopBar.Parent = Main
-	TopBar.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	TopBar.BorderSizePixel = 0
-	TopBar.Size = UDim2.new(0, 300, 0, 30)
-
-	Close.Name = "Close"
-	Close.Parent = TopBar
-	Close.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	Close.BorderSizePixel = 0
-	Close.Position = UDim2.new(0.899999976, 0, 0, 0)
-	Close.Size = UDim2.new(0, 30, 0, 30)
-	Close.Font = Enum.Font.SciFi
-	Close.Text = "x"
-	Close.TextColor3 = Color3.new(1, 0, 0.0156863)
-	Close.TextSize = 20
-	Close.MouseButton1Click:Connect(function()
-		wait(0.3)
-		Main:TweenPosition(UDim2.new(0.421999991, 0, -1.28400004, 0))
-		wait(3)
-		AnimationChanger:Destroy()
-	end)
-
-	TextLabel.Parent = TopBar
-	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-	TextLabel.BackgroundTransparency = 1
-	TextLabel.BorderSizePixel = 0
-	TextLabel.Position = UDim2.new(0, 0, 0.600000024, 0)
-	TextLabel.Size = UDim2.new(0, 270, 0, 10)
-	TextLabel.Font = Enum.Font.SourceSans
-	TextLabel.Text = "Made by Nyser#4623"
-	TextLabel.TextColor3 = Color3.new(1, 1, 1)
-	TextLabel.TextSize = 15
-
-	TextLabel_2.Parent = TopBar
-	TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
-	TextLabel_2.BackgroundTransparency = 1
-	TextLabel_2.BorderSizePixel = 0
-	TextLabel_2.Position = UDim2.new(0, 0, -0.0266667679, 0)
-	TextLabel_2.Size = UDim2.new(0, 270, 0, 20)
-	TextLabel_2.Font = Enum.Font.SourceSans
-	TextLabel_2.Text = "Animation Changer"
-	TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
-	TextLabel_2.TextSize = 20
-
-	NormalTab.Name = "NormalTab"
-	NormalTab.Parent = Main
-	NormalTab.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
-	NormalTab.BackgroundTransparency = 1
-	NormalTab.BorderSizePixel = 0
-	NormalTab.Position = UDim2.new(0.5, 0, 0.119999997, 0)
-	NormalTab.Size = UDim2.new(0, 150, 0, 500)
-
-	A_Astronaut.Name = "A_Astronaut"
-	A_Astronaut.Parent = NormalTab
-	A_Astronaut.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Astronaut.BorderSizePixel = 0
-	A_Astronaut.Position = UDim2.new(0, 0, 0.815764725, 0)
-	A_Astronaut.Size = UDim2.new(0, 150, 0, 30)
-	A_Astronaut.Font = Enum.Font.SciFi
-	A_Astronaut.Text = "Astronaut"
-	A_Astronaut.TextColor3 = Color3.new(1, 1, 1)
-	A_Astronaut.TextSize = 20
-	A_Astronaut.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Bubbly.Name = "A_Bubbly"
-	A_Bubbly.Parent = NormalTab
-	A_Bubbly.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Bubbly.BorderSizePixel = 0
-	A_Bubbly.Position = UDim2.new(0, 0, 0.349019617, 0)
-	A_Bubbly.Size = UDim2.new(0, 150, 0, 30)
-	A_Bubbly.Font = Enum.Font.SciFi
-	A_Bubbly.Text = "Bubbly"
-	A_Bubbly.TextColor3 = Color3.new(1, 1, 1)
-	A_Bubbly.TextSize = 20
-	A_Bubbly.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
-		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
-		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Cartoony.Name = "A_Cartoony"
-	A_Cartoony.Parent = NormalTab
-	A_Cartoony.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Cartoony.BorderSizePixel = 0
-	A_Cartoony.Position = UDim2.new(0, 0, 0.407272667, 0)
-	A_Cartoony.Size = UDim2.new(0, 150, 0, 30)
-	A_Cartoony.Font = Enum.Font.SciFi
-	A_Cartoony.Text = "Cartoony"
-	A_Cartoony.TextColor3 = Color3.new(1, 1, 1)
-	A_Cartoony.TextSize = 20
-	A_Cartoony.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Elder.Name = "A_Elder"
-	A_Elder.Parent = NormalTab
-	A_Elder.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Elder.BorderSizePixel = 0
-	A_Elder.Position = UDim2.new(6.51925802e-09, 0, 0.636310041, 0)
-	A_Elder.Size = UDim2.new(0, 150, 0, 30)
-	A_Elder.Font = Enum.Font.SciFi
-	A_Elder.Text = "Elder"
-	A_Elder.TextColor3 = Color3.new(1, 1, 1)
-	A_Elder.TextSize = 20
-	A_Elder.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Knight.Name = "A_Knight"
-	A_Knight.Parent = NormalTab
-	A_Knight.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Knight.BorderSizePixel = 0
-	A_Knight.Position = UDim2.new(0, 0, 0.52352941, 0)
-	A_Knight.Size = UDim2.new(0, 150, 0, 30)
-	A_Knight.Font = Enum.Font.SciFi
-	A_Knight.Text = "Knight"
-	A_Knight.TextColor3 = Color3.new(1, 1, 1)
-	A_Knight.TextSize = 20
-	A_Knight.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=657564596"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=658409194"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=658360781"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=657600338"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Levitation.Name = "A_Levitation"
-	A_Levitation.Parent = NormalTab
-	A_Levitation.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Levitation.BorderSizePixel = 0
-	A_Levitation.Position = UDim2.new(0, 0, 0.115472436, 0)
-	A_Levitation.Size = UDim2.new(0, 150, 0, 30)
-	A_Levitation.Font = Enum.Font.SciFi
-	A_Levitation.Text = "Levitation"
-	A_Levitation.TextColor3 = Color3.new(1, 1, 1)
-	A_Levitation.TextSize = 20
-	A_Levitation.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Mage.Name = "A_Mage"
-	A_Mage.Parent = NormalTab
-	A_Mage.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Mage.BorderSizePixel = 0
-	A_Mage.Position = UDim2.new(0, 0, 0.696203232, 0)
-	A_Mage.Size = UDim2.new(0, 150, 0, 30)
-	A_Mage.Font = Enum.Font.SciFi
-	A_Mage.Text = "Mage"
-	A_Mage.TextColor3 = Color3.new(1, 1, 1)
-	A_Mage.TextSize = 20
-	A_Mage.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Ninja.Name = "A_Ninja"
-	A_Ninja.Parent = NormalTab
-	A_Ninja.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Ninja.BorderSizePixel = 0
-	A_Ninja.Position = UDim2.new(0, 0, 0.0597896464, 0)
-	A_Ninja.Size = UDim2.new(0, 150, 0, 30)
-	A_Ninja.Font = Enum.Font.SciFi
-	A_Ninja.Text = "Ninja"
-	A_Ninja.TextColor3 = Color3.new(1, 1, 1)
-	A_Ninja.TextSize = 20
-	A_Ninja.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Pirate.Name = "A_Pirate"
-	A_Pirate.Parent = NormalTab
-	A_Pirate.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Pirate.BorderSizePixel = 0
-	A_Pirate.Position = UDim2.new(-0.000333309174, 0, 0.874588311, 0)
-	A_Pirate.Size = UDim2.new(0, 150, 0, 30)
-	A_Pirate.Font = Enum.Font.SciFi
-	A_Pirate.Text = "Pirate"
-	A_Pirate.TextColor3 = Color3.new(1, 1, 1)
-	A_Pirate.TextSize = 20
-	A_Pirate.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Robot.Name = "A_Robot"
-	A_Robot.Parent = NormalTab
-	A_Robot.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Robot.BorderSizePixel = 0
-	A_Robot.Position = UDim2.new(0, 0, 0.291479498, 0)
-	A_Robot.Size = UDim2.new(0, 150, 0, 30)
-	A_Robot.Font = Enum.Font.SciFi
-	A_Robot.Text = "Robot"
-	A_Robot.TextColor3 = Color3.new(1, 1, 1)
-	A_Robot.TextSize = 20
-	A_Robot.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Stylish.Name = "A_Stylish"
-	A_Stylish.Parent = NormalTab
-	A_Stylish.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Stylish.BorderSizePixel = 0
-	A_Stylish.Position = UDim2.new(0, 0, 0.232816339, 0)
-	A_Stylish.Size = UDim2.new(0, 150, 0, 30)
-	A_Stylish.Font = Enum.Font.SciFi
-	A_Stylish.Text = "Stylish"
-	A_Stylish.TextColor3 = Color3.new(1, 1, 1)
-	A_Stylish.TextSize = 20
-	A_Stylish.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_SuperHero.Name = "A_SuperHero"
-	A_SuperHero.Parent = NormalTab
-	A_SuperHero.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_SuperHero.BorderSizePixel = 0
-	A_SuperHero.Position = UDim2.new(0, 0, 0.464919746, 0)
-	A_SuperHero.Size = UDim2.new(0, 150, 0, 30)
-	A_SuperHero.Font = Enum.Font.SciFi
-	A_SuperHero.Text = "SuperHero"
-	A_SuperHero.TextColor3 = Color3.new(1, 1, 1)
-	A_SuperHero.TextSize = 20
-	A_SuperHero.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Toy.Name = "A_Toy"
-	A_Toy.Parent = NormalTab
-	A_Toy.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Toy.BorderSizePixel = 0
-	A_Toy.Position = UDim2.new(6.51925802e-09, 0, 0.756028414, 0)
-	A_Toy.Size = UDim2.new(0, 150, 0, 30)
-	A_Toy.Font = Enum.Font.SciFi
-	A_Toy.Text = "Toy"
-	A_Toy.TextColor3 = Color3.new(1, 1, 1)
-	A_Toy.TextSize = 20
-	A_Toy.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Vampire.Name = "A_Vampire"
-	A_Vampire.Parent = NormalTab
-	A_Vampire.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Vampire.BorderSizePixel = 0
-	A_Vampire.Position = UDim2.new(0, 0, 0.934021354, 0)
-	A_Vampire.Size = UDim2.new(0, 150, 0, 30)
-	A_Vampire.Font = Enum.Font.SciFi
-	A_Vampire.Text = "Vampire"
-	A_Vampire.TextColor3 = Color3.new(1, 1, 1)
-	A_Vampire.TextSize = 20
-	A_Vampire.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Werewolf.Name = "A_Werewolf"
-	A_Werewolf.Parent = NormalTab
-	A_Werewolf.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Werewolf.BorderSizePixel = 0
-	A_Werewolf.Position = UDim2.new(-0.000333368778, 0, 0.174509808, 0)
-	A_Werewolf.Size = UDim2.new(0, 150, 0, 30)
-	A_Werewolf.Font = Enum.Font.SciFi
-	A_Werewolf.Text = "Werewolf"
-	A_Werewolf.TextColor3 = Color3.new(1, 1, 1)
-	A_Werewolf.TextSize = 20
-	A_Werewolf.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Zombie.Name = "A_Zombie"
-	A_Zombie.Parent = NormalTab
-	A_Zombie.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Zombie.BorderSizePixel = 0
-	A_Zombie.Position = UDim2.new(-1.1920929e-07, 0, 0.582352936, 0)
-	A_Zombie.Size = UDim2.new(0, 150, 0, 30)
-	A_Zombie.Font = Enum.Font.SciFi
-	A_Zombie.Text = "Zombie"
-	A_Zombie.TextColor3 = Color3.new(1, 1, 1)
-	A_Zombie.TextSize = 20
-	A_Zombie.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	Category.Name = "Category"
-	Category.Parent = NormalTab
-	Category.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
-	Category.BorderSizePixel = 0
-	Category.Size = UDim2.new(0, 150, 0, 30)
-	Category.Text = "Normal"
-	Category.TextColor3 = Color3.new(0, 0.835294, 1)
-	Category.TextSize = 14
-
-	SpecialTab.Name = "SpecialTab"
-	SpecialTab.Parent = Main
-	SpecialTab.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
-	SpecialTab.BackgroundTransparency = 1
-	SpecialTab.BorderSizePixel = 0
-	SpecialTab.Position = UDim2.new(0, 0, 0.119999997, 0)
-	SpecialTab.Size = UDim2.new(0, 150, 0, 230)
-
-	A_Patrol.Name = "A_Patrol"
-	A_Patrol.Parent = SpecialTab
-	A_Patrol.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Patrol.BorderSizePixel = 0
-	A_Patrol.Position = UDim2.new(0, 0, 0.259960413, 0)
-	A_Patrol.Size = UDim2.new(0, 150, 0, 30)
-	A_Patrol.Font = Enum.Font.SciFi
-	A_Patrol.Text = "Patrol"
-	A_Patrol.TextColor3 = Color3.new(1, 1, 1)
-	A_Patrol.TextSize = 20
-	A_Patrol.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1149612882"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1151231493"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1150967949"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1148863382"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Confident.Name = "A_Confident"
-	A_Confident.Parent = SpecialTab
-	A_Confident.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Confident.BorderSizePixel = 0
-	A_Confident.Position = UDim2.new(0, 0, 0.389248967, 0)
-	A_Confident.Size = UDim2.new(0, 150, 0, 30)
-	A_Confident.Font = Enum.Font.SciFi
-	A_Confident.Text = "Confident"
-	A_Confident.TextColor3 = Color3.new(1, 1, 1)
-	A_Confident.TextSize = 20
-	A_Confident.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1069977950"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1069987858"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1070017263"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1070001516"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1069984524"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1069946257"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1069973677"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Popstar.Name = "A_Popstar"
-	A_Popstar.Parent = SpecialTab
-	A_Popstar.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Popstar.BorderSizePixel = 0
-	A_Popstar.Position = UDim2.new(0, 0, 0.130671918, 0)
-	A_Popstar.Size = UDim2.new(0, 150, 0, 30)
-	A_Popstar.Font = Enum.Font.SciFi
-	A_Popstar.Text = "Popstar"
-	A_Popstar.TextColor3 = Color3.new(1, 1, 1)
-	A_Popstar.TextSize = 20
-	A_Popstar.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1212900985"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980338"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980348"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1212954642"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1213044953"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1212900995"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Cowboy.Name = "A_Cowboy"
-	A_Cowboy.Parent = SpecialTab
-	A_Cowboy.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Cowboy.BorderSizePixel = 0
-	A_Cowboy.Position = UDim2.new(0, 0, 0.772964239, 0)
-	A_Cowboy.Size = UDim2.new(0, 150, 0, 30)
-	A_Cowboy.Font = Enum.Font.SciFi
-	A_Cowboy.Text = "Cowboy"
-	A_Cowboy.TextColor3 = Color3.new(1, 1, 1)
-	A_Cowboy.TextSize = 20
-	A_Cowboy.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1014390418"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1014398616"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1014421541"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1014401683"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014394726"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1014380606"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1014384571"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Ghost.Name = "A_Ghost"
-	A_Ghost.Parent = SpecialTab
-	A_Ghost.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Ghost.BorderSizePixel = 0
-	A_Ghost.Position = UDim2.new(0, 0, 0.900632322, 0)
-	A_Ghost.Size = UDim2.new(0, 150, 0, 30)
-	A_Ghost.Font = Enum.Font.SciFi
-	A_Ghost.Text = "Ghost"
-	A_Ghost.TextColor3 = Color3.new(1, 1, 1)
-	A_Ghost.TextSize = 20
-	A_Ghost.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
-		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616012453"
-		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616011509"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Sneaky.Name = "A_Sneaky"
-	A_Sneaky.Parent = SpecialTab
-	A_Sneaky.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Sneaky.BorderSizePixel = 0
-	A_Sneaky.Position = UDim2.new(0, 0, 0.517628431, 0)
-	A_Sneaky.Size = UDim2.new(0, 150, 0, 30)
-	A_Sneaky.Font = Enum.Font.SciFi
-	A_Sneaky.Text = "Sneaky"
-	A_Sneaky.TextColor3 = Color3.new(1, 1, 1)
-	A_Sneaky.TextSize = 20
-	A_Sneaky.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Princess.Name = "A_Princess"
-	A_Princess.Parent = SpecialTab
-	A_Princess.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Princess.BorderSizePixel = 0
-	A_Princess.Position = UDim2.new(0, 0, 0.645296335, 0)
-	A_Princess.Size = UDim2.new(0, 150, 0, 30)
-	A_Princess.Font = Enum.Font.SciFi
-	A_Princess.Text = "Princess"
-	A_Princess.TextColor3 = Color3.new(1, 1, 1)
-	A_Princess.TextSize = 20
-	A_Princess.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=941003647"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=941013098"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=941028902"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=941015281"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=941008832"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=940996062"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=941000007"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	Category_2.Name = "Category"
-	Category_2.Parent = SpecialTab
-	Category_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
-	Category_2.BorderSizePixel = 0
-	Category_2.Size = UDim2.new(0, 150, 0, 30)
-	Category_2.Text = "Special"
-	Category_2.TextColor3 = Color3.new(0, 0.835294, 1)
-	Category_2.TextSize = 14
-
-	OtherTab.Name = "OtherTab"
-	OtherTab.Parent = Main
-	OtherTab.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
-	OtherTab.BackgroundTransparency = 1
-	OtherTab.BorderSizePixel = 0
-	OtherTab.Position = UDim2.new(0, 0, 1.06800008, 0)
-	OtherTab.Size = UDim2.new(0, 150, 0, 220)
-
-	Category_3.Name = "Category"
-	Category_3.Parent = OtherTab
-	Category_3.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
-	Category_3.BorderSizePixel = 0
-	Category_3.Size = UDim2.new(0, 150, 0, 30)
-	Category_3.Text = "Other"
-	Category_3.TextColor3 = Color3.new(0, 0.835294, 1)
-	Category_3.TextSize = 14
-
-	A_None.Name = "A_None"
-	A_None.Parent = OtherTab
-	A_None.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_None.BorderSizePixel = 0
-	A_None.Position = UDim2.new(0, 0, 0.134545445, 0)
-	A_None.Size = UDim2.new(0, 150, 0, 30)
-	A_None.Font = Enum.Font.SciFi
-	A_None.Text = "None"
-	A_None.TextColor3 = Color3.new(1, 1, 1)
-	A_None.TextSize = 20
-	A_None.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=0"
-		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=0"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	A_Anthro.Name = "A_Anthro"
-	A_Anthro.Parent = OtherTab
-	A_Anthro.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	A_Anthro.BorderSizePixel = 0
-	A_Anthro.Position = UDim2.new(0, 0, 0.269090891, 0)
-	A_Anthro.Size = UDim2.new(0, 150, 0, 30)
-	A_Anthro.Font = Enum.Font.SciFi
-	A_Anthro.Text = "Anthro (Default)"
-	A_Anthro.TextColor3 = Color3.new(1, 1, 1)
-	A_Anthro.TextSize = 20
-	A_Anthro.MouseButton1Click:Connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	wait(1)
-	Main:TweenPosition(UDim2.new(0.421999991, 0, 0.28400004, 0))
-end)
-
--- UNIVERSAL
-
-local Universal = Window:NewTab("Universal")
-local UniversalSection = Universal:NewSection("Universal")
-UniversalSection:NewToggle("Infinite Yield", "Executes Infinite Yield", function(s)
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
-UniversalSection:NewToggle("Anti AFK", "Stops you from being kicked", function(s)
-	wait(0.5)local ba=Instance.new("ScreenGui")
-	local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
-	local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
-	ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
-	ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
-	ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
-	ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
-	ca.TextSize=22;da.Parent=ca
-	da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
-	da.Size=UDim2.new(0,370,0,107)_b.Parent=da
-	_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
-	_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="made by ur mom "
-	_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
-	ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
-	ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
-	ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
-	game:service'Players'.LocalPlayer.Idled:connect(function()
-		bb:CaptureController()bb:ClickButton2(Vector2.new())
-		ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
-end)
-UniversalSection:NewToggle("Auto Pickup ", "Auto picks up tools from the workspace", function(s)
-	function getIslandName()
-		for i,v in pairs(game:GetService("Workspace").Islands:GetChildren()) do
-			if v:FindFirstChild("UserId") and v.ClassName == "Model" then
-				if v.UserId.Value == game:GetService("Players").LocalPlayer.UserId then 
-					return v.Name 
-				end
-			end
-		end
-	end
-
-	local name = getIslandName()
-	local oldCframe = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
-	if name == nil then return end
-	for i,v in pairs(game:GetService("Workspace").Islands[name].Drops:GetChildren()) do
-		if v.ClassName == "Tool" then
-			if v:FindFirstChild("HandleDisabled") then
-				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.HandleDisabled.CFrame + Vector3.new(0,3,0)
-				wait()
-				local A_1 = 
-					{
-						["tool"] = v,
-						["player_tracking_category"] = "join_from_web"
-					}
-				local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_TOOL_PICKUP_REQUEST"]
-				Event:InvokeServer(A_1)
-			end
-		end
-	end
-
-	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = oldCframe
-end)
-UniversalSection:NewToggle("ESP ", "Auto Tracks Players!", function(s)
-	loadstring(game:GetObjects("rbxassetid://9144350978")[1].Source)()
-end)
-
-
-
-
--- PLAYER
-
+--TABS
 local Player = Window:NewTab("Player")
-local PlayerSection = Player:NewSection("Player")
-PlayerSection:NewSlider("WalkSpeed", "Makes you walk faster!", 500, 16, function(s) -- 500 (MaxValue) | 16 (MinValue)
+local Main = Window:NewTab("Main")
+local Combat = Window:NewTab("Combat")
+local Other = Window:NewTab("Other")
+local Fun = Window:NewTab("Fun")
+
+--SECTIONS
+local FE = Fun:NewSection("FE")
+local Utilities = Player:NewSection("Utilities")
+local Animations = Fun:NewSection("Animations")
+local AdminCommands = Fun:NewSection("Admin Commands")
+local GameImprovement = Player:NewSection("Game Improvement")
+local Combat = Combat:NewSection("Comabat")
+local Main = Main:NewSection("Main")
+local StupidShit = Other:NewSection("Stupid Shit")
+
+-- SLIDERS 
+Utilities:NewSlider("WalkSpeed", "Run Fast!", 60, 17, function(s) -- 60 (MaxValue) | 16 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
-PlayerSection:NewSlider("Jumppower", "Makes you Jump higher!", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
+
+Utilities:NewSlider("JumpPower", "Jump Higher", 10, 170, function(s) -- 60 (MaxValue) | 16 (MinValue)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
-PlayerSection:NewToggle("Noclip", "Phase through Walls!", function(s)
-	local Workspace = game:GetService("Workspace")
-	local CoreGui = game:GetService("CoreGui")
-	local Players = game:GetService("Players")
-	local Noclip = Instance.new("ScreenGui")
-	local BG = Instance.new("Frame")
-	local Title = Instance.new("TextLabel")
-	local Toggle = Instance.new("TextButton")
-	local StatusPF = Instance.new("TextLabel")
-	local Status = Instance.new("TextLabel")
-	local Credit = Instance.new("TextLabel")
-	local Plr = Players.LocalPlayer
-	local Clipon = false
 
-	Noclip.Name = "Noclip"
-	Noclip.Parent = game.CoreGui
+-- BUTTONS
+GameImprovement:NewButton("FullBright", "Brightens Up The Game", function()
+	local Light = game:GetService("Lighting")
 
-	BG.Name = "BG"
-	BG.Parent = Noclip
-	BG.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
-	BG.BorderColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
-	BG.BorderSizePixel = 2
-	BG.Position = UDim2.new(0.149479166, 0, 0.82087779, 0)
-	BG.Size = UDim2.new(0, 210, 0, 127)
-	BG.Active = true
-	BG.Draggable = true
+	function dofullbright()
+		Light.Ambient = Color3.new(1, 1, 1)
+		Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+		Light.ColorShift_Top = Color3.new(1, 1, 1)
+	end
 
-	Title.Name = "Title"
-	Title.Parent = BG
-	Title.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
-	Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
-	Title.BorderSizePixel = 2
-	Title.Size = UDim2.new(0, 210, 0, 33)
-	Title.Font = Enum.Font.Highway
-	Title.Text = "Noclip"
-	Title.TextColor3 = Color3.new(1, 1, 1)
-	Title.FontSize = Enum.FontSize.Size32
-	Title.TextSize = 30
-	Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
-	Title.TextStrokeTransparency = 0
+	dofullbright()
 
-	Toggle.Parent = BG
-	Toggle.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
-	Toggle.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
-	Toggle.BorderSizePixel = 2
-	Toggle.Position = UDim2.new(0.152380958, 0, 0.374192119, 0)
-	Toggle.Size = UDim2.new(0, 146, 0, 36)
-	Toggle.Font = Enum.Font.Highway
-	Toggle.FontSize = Enum.FontSize.Size28
-	Toggle.Text = "Toggle"
-	Toggle.TextColor3 = Color3.new(1, 1, 1)
-	Toggle.TextSize = 25
-	Toggle.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
-	Toggle.TextStrokeTransparency = 0
+	Light.LightingChanged:Connect(dofullbright)
+	print("Clicked")
+end)
 
-	StatusPF.Name = "StatusPF"
-	StatusPF.Parent = BG
-	StatusPF.BackgroundColor3 = Color3.new(1, 1, 1)
-	StatusPF.BackgroundTransparency = 1
-	StatusPF.Position = UDim2.new(0.314285725, 0, 0.708661377, 0)
-	StatusPF.Size = UDim2.new(0, 56, 0, 20)
-	StatusPF.Font = Enum.Font.Highway
-	StatusPF.FontSize = Enum.FontSize.Size24
-	StatusPF.Text = "Status:"
-	StatusPF.TextColor3 = Color3.new(1, 1, 1)
-	StatusPF.TextSize = 20
-	StatusPF.TextStrokeColor3 = Color3.new(0.333333, 0.333333, 0.333333)
-	StatusPF.TextStrokeTransparency = 0
-	StatusPF.TextWrapped = true
+Combat:NewButton("Hitbox", "Make Heads Bigger!", function()
+	_G.HeadSize = 20
+	_G.Disabled = true
 
-	Status.Name = "Status"
-	Status.Parent = BG
-	Status.BackgroundColor3 = Color3.new(1, 1, 1)
-	Status.BackgroundTransparency = 1
-	Status.Position = UDim2.new(0.580952346, 0, 0.708661377, 0)
-	Status.Size = UDim2.new(0, 56, 0, 20)
-	Status.Font = Enum.Font.Highway
-	Status.FontSize = Enum.FontSize.Size14
-	Status.Text = "off"
-	Status.TextColor3 = Color3.new(0.666667, 0, 0)
-	Status.TextScaled = true
-	Status.TextSize = 14
-	Status.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
-	Status.TextWrapped = true
-	Status.TextXAlignment = Enum.TextXAlignment.Left
-
-	Credit.Name = "Credit"
-	Credit.Parent = BG
-	Credit.BackgroundColor3 = Color3.new(1, 1, 1)
-	Credit.BackgroundTransparency = 1
-	Credit.Position = UDim2.new(0.195238099, 0, 0.866141737, 0)
-	Credit.Size = UDim2.new(0, 128, 0, 17)
-	Credit.Font = Enum.Font.SourceSans
-	Credit.FontSize = Enum.FontSize.Size18
-	Credit.Text = "Created by KingLuna"
-	Credit.TextColor3 = Color3.new(1, 1, 1)
-	Credit.TextSize = 16
-	Credit.TextStrokeColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-	Credit.TextStrokeTransparency = 0
-	Credit.TextWrapped = true
-
-	Toggle.MouseButton1Click:connect(function()
-		if Status.Text == "off" then
-			Clipon = true
-			Status.Text = "on"
-			Status.TextColor3 = Color3.new(0,185,0)
-			Stepped = game:GetService("RunService").Stepped:Connect(function()
-				if not Clipon == false then
-					for a, b in pairs(Workspace:GetChildren()) do
-						if b.Name == Plr.Name then
-							for i, v in pairs(Workspace[Plr.Name]:GetChildren()) do
-								if v:IsA("BasePart") then
-									v.CanCollide = false
-								end end end end
-				else
-					Stepped:Disconnect()
+	game:GetService('RunService').RenderStepped:connect(function()
+		if _G.Disabled then
+			for i,v in next, game:GetService('Players'):GetPlayers() do
+				if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+					pcall(function()
+						v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+						v.Character.HumanoidRootPart.Transparency = 0.7
+						v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+						v.Character.HumanoidRootPart.Material = "Neon"
+						v.Character.HumanoidRootPart.CanCollide = false
+					end)
 				end
-			end)
-		elseif Status.Text == "on" then
-			Clipon = false
-			Status.Text = "off"
-			Status.TextColor3 = Color3.new(170,0,0)
+			end
 		end
 	end)
+	print("Clicked")
 end)
-PlayerSection:NewToggle("TP (CNTRL & CLICK)", "Teleport anywhere!", function(s)
-	local Plr = game:GetService("Players").LocalPlayer
-	local Mouse = Plr:GetMouse()
 
-	Mouse.Button1Down:connect(
-		function()
-			if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then
-				return
+Main:NewButton("Auto Pickup", "Pickup All Dropped Guns", function()
+	local LP = game.Players.LocalPlayer
+	while game.RunService.Heartbeat:Wait() do
+		local success, err = pcall(function()
+			for i,v in pairs(workspace:GetChildren()) do
+				if v:IsA("Tool") and v.Name ~= "Unusual Arrow" and v.Name ~= "Rokakaka" and v.Name ~= "Frog" and v.Name ~= "Jotaro Hat" and v.Name ~= "Unbelievable Arrow"then
+					firetouchinterest(LP.Character.HumanoidRootPart,v.Handle,0)
+				end
 			end
-			if not Mouse.Target then
-				return
+		end)
+	end
+	print("Clicked")
+end)
+
+Main:NewButton("Chat Spy", "See all messages!", function()
+	--chat "/spy" to toggle!
+	enabled = true
+	--if true will check your messages too
+	spyOnMyself = true
+	--if true will chat the logs publicly (fun, risky)
+	public = false
+	--if true will use /me to stand out
+	publicItalics = true
+	--customize private logs
+	privateProperties = {
+		Color = Color3.fromRGB(0,255,255); 
+		Font = Enum.Font.SourceSansBold;
+		TextSize = 18;
+	}
+	--////////////////////////////////////////////////////////////////
+	local StarterGui = game:GetService("StarterGui")
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+	local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+	local instance = (_G.chatSpyInstance or 0) + 1
+	_G.chatSpyInstance = instance
+
+	local function onChatted(p,msg)
+		if _G.chatSpyInstance == instance then
+			if p==player and msg:lower():sub(1,4)=="/spy" then
+				enabled = not enabled
+				wait(0.3)
+				privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+				StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+			elseif enabled and (spyOnMyself==true or p~=player) then
+				msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+				local hidden = true
+				local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+					if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+						hidden = false
+					end
+				end)
+				wait(1)
+				conn:Disconnect()
+				if hidden and enabled then
+					if public then
+						saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+					else
+						privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+						StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+					end
+				end
 			end
-			Plr.Character:MoveTo(Mouse.Hit.p)
 		end
-	)
+	end
+
+	for _,p in ipairs(Players:GetPlayers()) do
+		p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+	end
+	Players.PlayerAdded:Connect(function(p)
+		p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+	end)
+	privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+	StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+	local chatFrame = player.PlayerGui.Chat.Frame
+	chatFrame.ChatChannelParentFrame.Visible = true
+	chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+	print("Clicked")
 end)
 
--- BREAKING POINT
-local BreakingPoint = Window:NewTab("Breaking Point")
-local BreakingPointSection = BreakingPoint:NewSection("Breaking Point")
-BreakingPointSection:NewToggle("Auto Stab & Always hit", "Instantly kills the other player", function(s)
-local t=string.byte;local M=string.char;local c=string.sub;local I=table.concat;local s=math.ldexp;local H=getfenv or function()return _ENV end;local K=setmetatable;local r=select;local f=unpack;local i=tonumber;local function h(f)local e,o,a="","",{}local d=256;local n={}for l=0,d-1 do n[l]=M(l)end;local l=1;local function t()local e=i(c(f,l,l),36)l=l+1;local o=i(c(f,l,l+e-1),36)l=l+e;return o end;e=M(t())a[1]=e;while l<#f do local l=t()if n[l]then o=n[l]else o=e..c(e,1,1)end;n[d]=e..c(o,1,1)a[#a+1],e,d=o,o,d+1 end;return table.concat(a)end;local i=h('21M1R21M27621N21C27621M22E22D22J22M22122622022B22C22L21N21Q27A22L22J22F22N21N21P27A23622622622223H22N22621N27527622A27X222221101L1L22222J27G22N22G27J1K22H22D22F1L22022J2251L22W22O21S1C23321S22H23C27T27A22Y22E22J21V22N22022121N21D27A23A22D22H22J22E29229429621N21F27A23D22A22J28O22H22629J29L27622522D22022922128D22H27S21J29M22722022022N22C22623D27Q29622J21N21E27A28022623B22D22722127S2792762AJ22X29622422B2A227827A22W22722C2AT2202AV2AX2A427622W2A922M29622X29S22222222N22M2AY27623J22322722B22223C2932BB2AG27V28E2BQ27E27S29A27623G27J22M23J22C22N22F22B22N29827N27623F2A62AF2CB21M23522B22E22E29927A2CI2CK2C42C62C829821I27A23222N22E22N22229X2262CO2CL2CU27623D2A822J29S2312C222D22527M27A29S21U28221G27A23C2D822927J22L1Q22Y22D27J28229U21M23F22M22M23222D22L22L2CY29K2CN2CJ22E1Q2CD28O2BJ2DX22E2252942211Q23622B2DV27A2DY22M23C22727X22D22C21N21529M22D22221V1Q23I22B22128K22022M1Q2B322429J2AH2CC2DZ23A22J22G2CX21N21427A22F2BX1Q22G2F028E27P2201P191B13132ED2E12E32CY2EB2AF2B721M2G02E422N2D323F2CK2DF29V22J2EL2AQ27621R27A2BT27623C22J22H2292A122921N2DK2C02C22C12972AB22A2CJ2BI2GJ2GM2BR27S2FC21M2362272FM22C2DT2BI2DW2BL2BN2222E122D22E27A21M2G525X27A1G27A2HP21621M1U2HS21M1Q2HV27A2641Y25M25H1U1Y27625X1Y2HZ2I627625Y1I2761U2IF25625Z1Q2I41J2HZ25625T2FC21G2FC2IQ23E21M2152IT21E22Y21M2192FC26127O27A25T1Y2HU1A2I721M25X2FC21H2FC21N21L2GK2GU21M2C122C22M2GX27G29N2H121N2H321M2BW2BS2DW29N29P2GO29S2202HM2BZ21M25T21M2HU21927A2602162I421K2HU2K62IA21M1T2JB25U1Q2HU21A2IO25Z2I325H1J2I72IP21M1A2IW2J621E2K92FC2KC2KE2KG2J72HZ2KK27625T2KG21R2KG2JD2762JF27A27U2772CG2C52DI2GD21M27P27R29027629H2952972CM2AR2812JR22E22M2A82EU2JY29O29Q2K22GL2H82BV2H521K2HM27625M152HM1W2HX2762JB21M25S21E2I41U2FC2642KD2I52KG2652162KY1U2MW2162IV2N02762MX2MZ2KG25Z2222MQ22221M25625P1I2J02152IF21M25Q22I27621L2NM2IJ22Q2IM22Q2ND25P27A2JK25P1A2NM2152KY21M25L2NJ22L2NJ25P2162L82KG25Q2O221L2KY2IJ1I2IM2II25P2IR2FC25E1Y2NM21Q2KV25Z2MU1J2HU2NE27A2MH2762NY2NC21E2O225X1A2J0112O22K72HZ2NJ21M2N925H2KT22225H21X25X2LC2LE2JE2JG2LJ21M2E62D62M62K129J2CG2LQ27S2172AZ2CZ22E2AW2D92BH2BD29X22J22L2BY2PZ22F22D29S23J2FA2AA2ED2GX22N2F929J2JI27622922C22B2LO23622N27E2HM21H2J62K82KZ27625U2NT21M21L2NT2IJ22Y2IM2J025625S2MU1S2L62P22742IY2N32IY2J02MR2762601A2MQ2O225H2QY2HW27625H1Q2NC1U2HZ21M25D27A2RT21M2NY2IG2O225L2S22J6122HU1U122I82PM2772DW2PQ21M2JZ2M72PU27V2QT22M2MD2ME2MG2SR2HM21A23E2LO2PW21N2PY2B82Q02Q229S22M2Q528O2Q82LX21M2B92QB2QD2QF2822GH2QI2QK2202JH27A2QO22B2HM21B2QX2HU2EW2R024Y2NN2TV2IJ2562IM2562ND2K72TS2L02HZ21B2MS2KS2IC21M2602IL2I52RZ25G2U92JB2672362MQ2362ND25O2OH25H1S2O72NZ21M22G2O22P02HV2UW1A2U11U2O226S2UK2I52UM21M26P2FC2RL21M2712S927626X2R21U2R226D2VA2FC25P2SB2HV2SE21M26724A2PE1F2VT2PI2SG2PP2JU2TA2JM2C32C52C72C92M92362MB2BX2LO2LM2822CG2G32LO2D32HM1X2QX2762PO2IQ2SC2IY2IB2FC2652VE21M2MX2IB2KG2612VL2N52O92HV2KG2662TV2HV2TX25Z2TZ2KT2U12562I22I41S2JB2WY27622L2FC2RV27622K2RZ25Z2R72KT2R92IE2NN2II2IK2IM2IO25L2KG21G2KG25L122IV2152VQ26T2O222L2S72162J92N82KS2KU2ND2XZ2762Y12762Y32NH2Y72Y92YB2YD2N52HY21M2PB25Z24Q2PE1J2YX2VX2LG2H72SI2K52W22CQ2W52982H72W82212JW27S2LL22N2LN2M52K029R29J2KG2H82HA22J2HC22B22M22W22D2QC22Y29P28221O29M23G28O2LR2K522Y27I2FM22021V2ZW2202WD27A22J2CE2LO2G32HM2102MK21M2PO2HT2I02SF2WQ2LA2WT2IQ310Q2WU2WZ2K62X12N421M25U24A2IG31122IJ24I2IM24I2ND25S2KS2XF2YS2XI27A2612JB22K2JB25Z22A2IM22A2NU2OL2OZ1A2IV102UZ2RK2S71I2N32NJ2Y32RX2VQ2Y32NM2SD311Q2RX2O225O23E2MQ2IV2NK2RZ2RY2ND2KR2IM2KV2O82YJ2KG2NY24Q2IW311W2XI2O72YC2KX2L62YT2YV21U2YY312Y2Z121M2LH2PP21N2GK2GH2G72G22CE2HM2QM2K62NW2L02762132FC2LF31322JG31352772G531382G92E82GB2HL27A313C2K72YJ313F21M313H2SF2Z227A2SU21N2D521M2AO22622H2Q122222G27D2F621N2MJ28528728928B22M2F32F522M1K2E31L2361922922O1E23J132HM2PO25W2MP2UQ2FC25Y2JB21L2OR2OT2OV31522XE2FC2RB2L52I8312T1A2PL314221M22X27A315C25H21F315E2MU310Z2IQ2MZ2L32UD312F21M25H310W25T312E2RZ2HP2IB2HS21E310U315F2MV2LA2IZ2HV2IY2O02WR21E2NC1K2L3312A2I5312C311G312O2UA316131122VB25H310Y2KG25C315T2KG25D1I23U2HV2NJ25K22I2MQ2NM2S02KI2UA317226I31752OZ2GK27A2S827727A26U25E1L21M21025E2PH313J1L313I2KG1L312M2222U12132NC21M26S315322J2VM21U318121U27626U3169317Q2AH2562P42761L2P32FC317V2OZ25631812U131842KS22J2JB25L24Y31812X526S2UD22J2RZ25L24Q3181312O21M26U1Q2KY2102IO318I21M318K3141319F313I2VQ1L312224I3181311831981I319B2II319E319G2JC318M319J318J312224A2U1211311221M26T21M22Y21N2S32VD2SC27A27123U22231A9317431A5317C2JB26P23E25631A9312C26W26Q2MQ26Q27626E315J317Q2OF25X319K2VQ26P2KN2KX2RZ31AM31AO21931AQ26I2KE317F21M26E2VO2102SE318H31B127631B32J931B623E23U21N31B927626W2622KE26227626C2V522J2V731BM31B531BL23E26I31BR31AQ25M2KE25M31BL2J82KX31AL1225M2EV2VQ26Q315731592IM2OV26P121A31CJ2762712FC21J2FC26P315I2KG31CQ21M21K2Y627626Q2KG21L2OV25Z31531J318G31CQ31CS31D52V82L121M1B31CY1I21621K2192NJ31CZ2YR2PC24Y2YY31DV31313133');local n=bit and bit.bxor or function(l,o)local e,n=1,0 while l>0 and o>0 do local c,a=l%2,o%2 if c~=a then n=n+e end l,o,e=(l-c)/2,(o-a)/2,e*2 end if l<o then l=o end while l>0 do local o=l%2 if o>0 then n=n+e end l,e=(l-o)/2,e*2 end return n end local function e(e,l,o)if o then local l=(e/2^(l-1))%2^((o-1)-(l-1)+1);return l-l%1;else local l=2^(l-1);return(e%(l+l)>=l)and 1 or 0;end;end;local l=1;local function o()local e,o,a,c=t(i,l,l+3);e=n(e,58)o=n(o,58)a=n(a,58)c=n(c,58)l=l+4;return(c*16777216)+(a*65536)+(o*256)+e;end;local function d()local e=n(t(i,l,l),58);l=l+1;return e;end;local function h()local l=o();local o=o();local c=1;local n=(e(o,1,20)*(2^32))+l;local l=e(o,21,31);local e=((-1)^e(o,32));if(l==0)then if(n==0)then return e*0;else l=1;c=0;end;elseif(l==2047)then return(n==0)and(e*(1/0))or(e*(0/0));end;return s(e,l-1023)*(c+(n/(2^52)));end;local a=o;local function s(e)local o;if(not e)then e=a();if(e==0)then return'';end;end;o=c(i,l,l+e-1);l=l+e;local e={}for l=1,#o do e[l]=M(n(t(c(o,l,l)),58))end return I(e);end;local l=o;local function i(...)return{...},r('#',...)end local function N()local t={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};local f={0,0,0,0,0,0,0,0,0,0};local l={};local a={t,nil,f,nil,l};a[4]=d();local l=o()local c={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};for o=1,l do local e=d();local l;if(e==3)then l=(d()~=0);elseif(e==2)then l=h();elseif(e==1)then l=s();end;c[o]=l;end;a[2]=c for l=1,o()do f[l-1]=N();end;for a=1,o()do local c=n(o(),239);local o=n(o(),36);local n=e(c,1,2);local l=e(o,1,11);local l={l,e(c,3,11),nil,nil,o};if(n==0)then l[3]=e(c,12,20);l[5]=e(c,21,29);elseif(n==1)then l[3]=e(o,12,33);elseif(n==2)then l[3]=e(o,12,32)-1048575;elseif(n==3)then l[3]=e(o,12,32)-1048575;l[5]=e(c,21,29);end;t[a]=l;end;return a;end;local function s(l,h,M)local o=l[1];local e=l[2];local c=l[3];local l=l[4];return function(...)local n=o;local a=e;local I=c;local c=l;local C=i local e=1;local d=-1;local N={};local i={...};local t=r('#',...)-1;local J={};local o={};for l=0,t do if(l>=c)then N[l-c]=i[l+1];else o[l]=i[l+1];end;end;local l=t-c+1 local l;local c;while true do l=n[e];c=l[1];if c<=35 then if c<=17 then if c<=8 then if c<=3 then if c<=1 then if c==0 then o[l[2]]=s(I[l[3]],nil,M);else local n=l[2];local c={};local e=0;local a=d;for l=n+1,a do e=e+1;c[e]=o[l];end;local c={o[n](f(c,1,a-n))};local l=n+l[5]-2;e=0;for l=n,l do e=e+1;o[l]=c[e];end;d=l;end;elseif c>2 then local n=l[2];local a={};local e=0;local c=n+l[3]-1;for l=n+1,c do e=e+1;a[e]=o[l];end;local c={o[n](f(a,1,c-n))};local l=n+l[5]-2;e=0;for l=n,l do e=e+1;o[l]=c[e];end;d=l;else o[l[2]]=M[a[l[3]]];end;elseif c<=5 then if c>4 then local M;local t;local i;local h;local c;o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];c=l[2];h=o[l[3]];o[c+1]=h;o[c]=h[a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]];e=e+1;l=n[e];for l=l[2],l[3]do o[l]=nil;end;e=e+1;l=n[e];o[l[2]]=(l[3]~=0);e=e+1;l=n[e];c=l[2];i={};t=0;M=c+l[3]-1;for l=c+1,M do t=t+1;i[t]=o[l];end;o[c](f(i,1,M-c));d=c;else for l=l[2],l[3]do o[l]=nil;end;end;elseif c<=6 then if(o[l[2]]~=o[l[5]])then e=e+1;else e=e+l[3];end;elseif c>7 then local n=l[2];local a={};local e=0;local c=n+l[3]-1;for l=n+1,c do e=e+1;a[e]=o[l];end;local c={o[n](f(a,1,c-n))};local l=n+l[5]-2;e=0;for l=n,l do e=e+1;o[l]=c[e];end;d=l;else local n=l[2];local c={};local e=0;local l=n+l[3]-1;for l=n+1,l do e=e+1;c[e]=o[l];end;local c,l=C(o[n](f(c,1,l-n)));l=l+n-1;e=0;for l=n,l do e=e+1;o[l]=c[e];end;d=l;end;elseif c<=12 then if c<=10 then if c>9 then local s;local i;local t;local r;local h;local c;o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];c=l[2];h=o[l[3]];o[c+1]=h;o[c]=h[a[l[5]]];e=e+1;l=n[e];c=l[2];r={};t=0;i=c+l[3]-1;for l=c+1,i do t=t+1;r[t]=o[l];end;s={o[c](f(r,1,i-c))};i=c+l[5]-2;t=0;for l=c,i do t=t+1;o[l]=s[t];end;d=i;e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];c=l[2];h=o[l[3]];o[c+1]=h;o[c]=h[a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];c=l[2];r={};t=0;i=c+l[3]-1;for l=c+1,i do t=t+1;r[t]=o[l];end;s={o[c](f(r,1,i-c))};i=c+l[5]-2;t=0;for l=c,i do t=t+1;o[l]=s[t];end;d=i;e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];else local n=l[2];local c={};local e=0;local l=n+l[3]-1;for l=n+1,l do e=e+1;c[e]=o[l];end;local c,l=C(o[n](f(c,1,l-n)));l=l+n-1;e=0;for l=n,l do e=e+1;o[l]=c[e];end;d=l;end;elseif c==11 then o[l[2]]=o[l[3]];else local n=l[2];local a=l[5];local l=n+2;local c={o[n](o[n+1],o[l])};for e=1,a do o[l+e]=c[e];end;local n=o[n+3];if n then o[l]=n else e=e+1;end;end;elseif c<=14 then if c>13 then local s;local i;local t;local r;local M;local c;o[l[2]]=h[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];c=l[2];M=o[l[3]];o[c+1]=M;o[c]=M[a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];c=l[2];r={};t=0;i=c+l[3]-1;for l=c+1,i do t=t+1;r[t]=o[l];end;s={o[c](f(r,1,i-c))};i=c+l[5]-2;t=0;for l=c,i do t=t+1;o[l]=s[t];end;d=i;e=e+1;l=n[e];if o[l[2]]then e=e+1;else e=e+l[3];end;else e=e+l[3];end;elseif c<=15 then if o[l[2]]then e=e+1;else e=e+l[3];end;elseif c>16 then local n=l[2];local a=o[n+2];local c=o[n]+a;o[n]=c;if a>0 then if c<=o[n+1]then e=e+l[3];o[n+3]=c;end;elseif c>=o[n+1]then e=e+l[3];o[n+3]=c;end;else o[l[2]]=a[l[3]];end;elseif c<=26 then if c<=21 then if c<=19 then if c==18 then local n=l[2];o[n]=o[n]-o[n+2];e=e+l[3];else o[l[2]][o[l[3]]]=o[l[5]];end;elseif c>20 then o[l[2]]();d=A;else local e=l[2];local c={};local n=0;local l=e+l[3]-1;for l=e+1,l do n=n+1;c[n]=o[l];end;o[e](f(c,1,l-e));d=e;end;elseif c<=23 then if c==22 then e=e+l[3];else local e=l[2];local c={};local n=0;local l=e+l[3]-1;for l=e+1,l do n=n+1;c[n]=o[l];end;o[e](f(c,1,l-e));d=e;end;elseif c<=24 then if not o[l[2]]then e=e+1;else e=e+l[3];end;elseif c>25 then local d=I[l[3]];local a;local c={};a=K({},{__index=function(e,l)local l=c[l];return l[1][l[2]];end,__newindex=function(o,l,e)local l=c[l]l[1][l[2]]=e;end;});for a=1,l[5]do e=e+1;local l=n[e];if l[1]==11 then c[a-1]={o,l[3]};else c[a-1]={h,l[3]};end;J[#J+1]=c;end;o[l[2]]=s(d,a,M);else o[l[2]]();d=A;end;elseif c<=30 then if c<=28 then if c==27 then o[l[2]]=#o[l[3]];else local n=l[2];local a=l[5];local l=n+2;local c={o[n](o[n+1],o[l])};for e=1,a do o[l+e]=c[e];end;local n=o[n+3];if n then o[l]=n else e=e+1;end;end;elseif c>29 then o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]][a[l[3]]]=o[l[5]];e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];if o[l[2]]then e=e+1;else e=e+l[3];end;else o[l[2]]={};end;elseif c<=32 then if c==31 then o[l[2]][o[l[3]]]=o[l[5]];else if(o[l[2]]~=o[l[5]])then e=e+1;else e=e+l[3];end;end;elseif c<=33 then local e=l[2];local c=e+l[3]-2;local n={};local l=0;for e=e,c do l=l+1;n[l]=o[e];end;do return f(n,1,l)end;elseif c==34 then do return end;else local c;local r;local c;local t;local M,i;local t;o[l[2]]=h[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];t=l[2];M,i={o[t]()};i=t+l[5]-2;c=0;for l=t,i do c=c+1;o[l]=M[c];end;d=i;e=e+1;l=n[e];o[l[2]]=h[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=h[l[3]];e=e+1;l=n[e];t=l[2];r={};c=0;i=t+l[3]-1;for l=t+1,i do c=c+1;r[c]=o[l];end;M={o[t](f(r,1,i-t))};i=t+l[5]-2;c=0;for l=t,i do c=c+1;o[l]=M[c];end;d=i;e=e+1;l=n[e];if o[l[2]]then e=e+1;else e=e+l[3];end;end;elseif c<=53 then if c<=44 then if c<=39 then if c<=37 then if c==36 then local n=l[2];local c={};local e=0;local a=d;for l=n+1,a do e=e+1;c[e]=o[l];end;local c={o[n](f(c,1,a-n))};local l=n+l[5]-2;e=0;for l=n,l do e=e+1;o[l]=c[e];end;d=l;else o[l[2]]={};end;elseif c>38 then if o[l[2]]then e=e+1;else e=e+l[3];end;else o[l[2]]=a[l[3]];end;elseif c<=41 then if c>40 then o[l[2]]=(l[3]~=0);else local c;local r;local c;local t;local M,i;local t;o[l[2]]=h[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];t=l[2];M,i={o[t]()};i=t+l[5]-2;c=0;for l=t,i do c=c+1;o[l]=M[c];end;d=i;e=e+1;l=n[e];o[l[2]]=h[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=h[l[3]];e=e+1;l=n[e];t=l[2];r={};c=0;i=t+l[3]-1;for l=t+1,i do c=c+1;r[c]=o[l];end;M={o[t](f(r,1,i-t))};i=t+l[5]-2;c=0;for l=t,i do c=c+1;o[l]=M[c];end;d=i;e=e+1;l=n[e];if o[l[2]]then e=e+1;else e=e+l[3];end;end;elseif c<=42 then o[l[2]]=h[l[3]];elseif c==43 then do return end;else o[l[2]]=o[l[3]]+a[l[5]];end;elseif c<=48 then if c<=46 then if c==45 then local c;local r,c;local i;local c;local h;local s;local t;o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];t=l[2];s=o[l[3]];o[t+1]=s;o[t]=s[a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];o[l[2]]=(l[3]~=0);e=e+1;l=n[e];t=l[2];h={};c=0;i=t+l[3]-1;for l=t+1,i do c=c+1;h[c]=o[l];end;r,i=C(o[t](f(h,1,i-t)));i=i+t-1;c=0;for l=t,i do c=c+1;o[l]=r[c];end;d=i;e=e+1;l=n[e];t=l[2];h={};c=0;i=d;for l=t+1,i do c=c+1;h[c]=o[l];end;r={o[t](f(h,1,i-t))};i=t+l[5]-2;c=0;for l=t,i do c=c+1;o[l]=r[c];end;d=i;e=e+1;l=n[e];t=l[2];r,i={o[t]()};i=t+l[5]-2;c=0;for l=t,i do c=c+1;o[l]=r[c];end;d=i;e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];else local n=l[2];local e=o[l[3]];o[n+1]=e;o[n]=e[a[l[5]]];end;elseif c>47 then if not o[l[2]]then e=e+1;else e=e+l[3];end;else o[l[2]]=(l[3]~=0);end;elseif c<=50 then if c==49 then local c;o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];c=l[2];o[c]=o[c]-o[c+2];e=e+l[3];else o[l[2]][a[l[3]]]=a[l[5]];end;elseif c<=51 then local n=l[2];local e=o[l[3]];o[n+1]=e;o[n]=e[a[l[5]]];elseif c==52 then local e=l[2];local c,n={o[e]()};local n=e+l[5]-2;local l=0;for e=e,n do l=l+1;o[e]=c[l];end;d=n;else o[l[2]]=#o[l[3]];end;elseif c<=62 then if c<=57 then if c<=55 then if c==54 then o[l[2]]=h[l[3]];else o[l[2]]=o[l[3]][a[l[5]]];end;elseif c==56 then local e=l[2];local c=e+l[3]-2;local n={};local l=0;for e=e,c do l=l+1;n[l]=o[e];end;do return f(n,1,l)end;else o[l[2]][a[l[3]]]=o[l[5]];end;elseif c<=59 then if c==58 then local d=I[l[3]];local a;local c={};a=K({},{__index=function(e,l)local l=c[l];return l[1][l[2]];end,__newindex=function(o,l,e)local l=c[l]l[1][l[2]]=e;end;});for a=1,l[5]do e=e+1;local l=n[e];if l[1]==11 then c[a-1]={o,l[3]};else c[a-1]={h,l[3]};end;J[#J+1]=c;end;o[l[2]]=s(d,a,M);else local r;local i;local t;local h;local M;local c;o[l[2]][a[l[3]]]=o[l[5]];e=e+1;l=n[e];c=l[2];M=o[l[3]];o[c+1]=M;o[c]=M[a[l[5]]];e=e+1;l=n[e];o[l[2]]={};e=e+1;l=n[e];o[l[2]][a[l[3]]]=a[l[5]];e=e+1;l=n[e];c=l[2];h={};t=0;i=c+l[3]-1;for l=c+1,i do t=t+1;h[t]=o[l];end;r={o[c](f(h,1,i-c))};i=c+l[5]-2;t=0;for l=c,i do t=t+1;o[l]=r[t];end;d=i;e=e+1;l=n[e];c=l[2];M=o[l[3]];o[c+1]=M;o[c]=M[a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];end;elseif c<=60 then local s;local i;local t;local r;local h;local c;o[l[2]]={};e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];o[l[2]]=M[a[l[3]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];c=l[2];h=o[l[3]];o[c+1]=h;o[c]=h[a[l[5]]];e=e+1;l=n[e];c=l[2];r={};t=0;i=c+l[3]-1;for l=c+1,i do t=t+1;r[t]=o[l];end;s={o[c](f(r,1,i-c))};i=c+l[5]-2;t=0;for l=c,i do t=t+1;o[l]=s[t];end;d=i;e=e+1;l=n[e];e=e+l[3];elseif c==61 then local n=l[2];o[n]=o[n]-o[n+2];e=e+l[3];else o[l[2]]=o[l[3]]+a[l[5]];end;elseif c<=67 then if c<=64 then if c>63 then o[l[2]][a[l[3]]]=o[l[5]];else local n=l[2];local a=o[n+2];local c=o[n]+a;o[n]=c;if a>0 then if c<=o[n+1]then e=e+l[3];o[n+3]=c;end;elseif c>=o[n+1]then e=e+l[3];o[n+3]=c;end;end;elseif c<=65 then local e=l[2];local c,n={o[e]()};local n=e+l[5]-2;local l=0;for e=e,n do l=l+1;o[e]=c[l];end;d=n;elseif c>66 then o[l[2]]=o[l[3]];else for l=l[2],l[3]do o[l]=nil;end;end;elseif c<=69 then if c>68 then o[l[2]]=s(I[l[3]],nil,M);else o[l[2]]=M[a[l[3]]];end;elseif c<=70 then local M;local t;local i;local h;local c;o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];o[l[2]]=o[l[3]][a[l[5]]];e=e+1;l=n[e];c=l[2];h=o[l[3]];o[c+1]=h;o[c]=h[a[l[5]]];e=e+1;l=n[e];o[l[2]]=a[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]];e=e+1;l=n[e];o[l[2]]=o[l[3]];e=e+1;l=n[e];for l=l[2],l[3]do o[l]=nil;end;e=e+1;l=n[e];o[l[2]]=(l[3]~=0);e=e+1;l=n[e];c=l[2];i={};t=0;M=c+l[3]-1;for l=c+1,M do t=t+1;i[t]=o[l];end;o[c](f(i,1,M-c));d=c;elseif c==71 then o[l[2]]=o[l[3]][a[l[5]]];else o[l[2]][a[l[3]]]=a[l[5]];end;e=e+1;end;end;end;return s(N(),{},H())();
+Combat:NewButton("Infinite Ammo", "Infinite Ammo", function()
+	local ammo = 999
+
+	local old
+	old = hookfunction(require(game:GetService("ReplicatedStorage").Libraries.Weapon).new, function(...)
+		local ret = old(...)
+		ret["maxAmmo"] = ammo
+		ret["ammo"] = ammo
+		return ret
+	end)
+	print("Clicked")
 end)
-BreakingPointSection:NewToggle("Always Bright", "Makes the game full bright", function(s)
-	if not _G.FullBrightExecuted then
 
-		_G.FullBrightEnabled = false
+Combat:NewButton("ESP", "See All Players", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua%'))()
+	print("Clicked")
+end)
 
-		_G.NormalLightingSettings = {
-			Brightness = game:GetService("Lighting").Brightness,
-			ClockTime = game:GetService("Lighting").ClockTime,
-			FogEnd = game:GetService("Lighting").FogEnd,
-			GlobalShadows = game:GetService("Lighting").GlobalShadows,
-			Ambient = game:GetService("Lighting").Ambient
-		}
+Utilities:NewButton("Anti Ragdoll", "Stop falling over!", function()
+	local Player = game:GetService("Players").LocalPlayer
+	local Character = Player.Character or Player.CharacterAdded:Wait()
+	local Humanoid = Character:FindFirstChild("Humanoid") or Character:WaitForChild("Humanoid")
+	local DisabledStates = {
+		Enum.HumanoidStateType.Ragdoll;
+	}
+	for _,state in ipairs(DisabledStates) do
+		Humanoid:SetStateEnabled(state,false)
+	end
+	print("Clicked")
+end)
 
-		game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(function()
-			if game:GetService("Lighting").Brightness ~= 1 and game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness then
-				_G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
-				if not _G.FullBrightEnabled then
-					repeat
-						wait()
-					until _G.FullBrightEnabled
+Utilities:NewButton("Infinite Skitlles", "Skittles really", function()
+	getgenv().WalkSpeedValue = 25; --set your desired walkspeed here
+	local Player = game:service'Players'.LocalPlayer;
+	Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+		Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+	end)
+	Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+	print("Clicked")
+end)
+
+Utilities:NewButton("Infinite Stamina", "Never Run Out Of Stamina", function()
+	while true do
+		game.Players.LocalPlayer.PlayerScripts.Events.Player.Stamina.Stamina.Value = 9001
+		wait()
+	end
+	print("Clicked")
+end)
+
+Combat:NewButton("Aimbot", "Never Miss A Shot", function()
+	local dwCamera = workspace.CurrentCamera
+	local dwRunService = game:GetService("RunService")
+	local dwUIS = game:GetService("UserInputService")
+	local dwEntities = game:GetService("Players")
+	local dwLocalPlayer = dwEntities.LocalPlayer
+	local dwMouse = dwLocalPlayer:GetMouse()
+
+	local settings = {
+		Aimbot = true,
+		Aiming = false,
+		Aimbot_AimPart = "Head",
+		Aimbot_TeamCheck = false,
+		Aimbot_Draw_FOV = true,
+		Aimbot_FOV_Radius = 50,
+		Aimbot_FOV_Color = Color3.fromRGB(255,255,255)
+	}
+
+	local fovcircle = Drawing.new("Circle")
+	fovcircle.Visible = settings.Aimbot_Draw_FOV
+	fovcircle.Radius = settings.Aimbot_FOV_Radius
+	fovcircle.Color = settings.Aimbot_FOV_Color
+	fovcircle.Thickness = 1
+	fovcircle.Filled = false
+	fovcircle.Transparency = 1
+
+	fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+
+	dwUIS.InputBegan:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton2 then
+			settings.Aiming = true
+		end
+	end)
+
+	dwUIS.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton2 then
+			settings.Aiming = false
+		end
+	end)
+
+	dwRunService.RenderStepped:Connect(function()
+
+		local dist = math.huge
+		local closest_char = nil
+
+		if settings.Aiming then
+
+			for i,v in next, dwEntities:GetChildren() do 
+
+				if v ~= dwLocalPlayer and
+					v.Character and
+					v.Character:FindFirstChild("HumanoidRootPart") and
+					v.Character:FindFirstChild("Humanoid") and
+					v.Character:FindFirstChild("Humanoid").Health > 0 then
+
+					if settings.Aimbot_TeamCheck == true and
+						v.Team ~= dwLocalPlayer.Team or
+						settings.Aimbot_TeamCheck == false then
+
+						local char = v.Character
+						local char_part_pos, is_onscreen = dwCamera:WorldToViewportPoint(char[settings.Aimbot_AimPart].Position)
+
+						if is_onscreen then
+
+							local mag = (Vector2.new(dwMouse.X, dwMouse.Y) - Vector2.new(char_part_pos.X, char_part_pos.Y)).Magnitude
+
+							if mag < dist and mag < settings.Aimbot_FOV_Radius then
+
+								dist = mag
+								closest_char = char
+
+							end
+						end
+					end
 				end
-				game:GetService("Lighting").Brightness = 1
+			end
+
+			if closest_char ~= nil and
+				closest_char:FindFirstChild("HumanoidRootPart") and
+				closest_char:FindFirstChild("Humanoid") and
+				closest_char:FindFirstChild("Humanoid").Health > 0 then
+
+				dwCamera.CFrame = CFrame.new(dwCamera.CFrame.Position, closest_char[settings.Aimbot_AimPart].Position)
+			end
+		end
+	end)	
+	print("Clicked")
+end)
+
+GameImprovement:NewButton("Anti-Lag", "Removes Lag", function()
+	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+	local g = game
+	local w = g.Workspace
+	local l = g.Lighting
+	local t = w.Terrain
+	t.WaterWaveSize = 0
+	t.WaterWaveSpeed = 0
+	t.WaterReflectance = 0
+	t.WaterTransparency = 0
+	l.GlobalShadows = false
+	l.FogEnd = 9e9
+	l.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for i, v in pairs(g:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+			v.Enabled = false
+		elseif v:IsA("MeshPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+			v.TextureID = 10385902758728957
+		end
+	end
+	for i, e in pairs(l:GetChildren()) do
+		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+			e.Enabled = false
+		end
+	end
+	print("Clicked")
+end)
+
+FE:NewButton("No Head", "Removes your head", function()
+	-- services
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	-- objects
+	local player = players.LocalPlayer
+	local character = player.Character
+	local humanoid = character:FindFirstChildWhichIsA("Humanoid")
+	local head, torso = character:FindFirstChild("Head"), character:FindFirstChild("UpperTorso")
+	local resetBindable = Instance.new("BindableEvent")
+	-- variables
+	local destroyFunc, resetBindableConnection = character.Destroy, nil
+	-- main
+	-- initializes the permadeath
+	player.Character = nil
+	player.Character = character
+	task.wait(players.RespawnTime + .05)
+
+	humanoid.BreakJointsOnDeath = false
+	humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+	if humanoid.RigType == Enum.HumanoidRigType.R15 then
+		task.defer(destroyFunc, (head.Neck))
+	end
+	task.defer(destroyFunc, head) -- and we destroy the head
+
+	resetBindableConnection = resetBindable.Event:Connect(function()
+		starterGui:SetCore("ResetButtonCallback", true)
+		resetBindableConnection:Disconnect()
+
+		if player.Character == character then
+			character:Destroy()
+			local daModel = Instance.new("Model")
+			local _daModelHumanoid = Instance.new("Humanoid")
+			_daModelHumanoid.Parent = daModel
+			player.Character = daModel
+
+			task.delay(players.RespawnTime, destroyFunc, daModel)
+		else
+			player.Character:BreakJoints()
+		end
+	end)
+	starterGui:SetCore("ResetButtonCallback", resetBindable)
+	print("Clicked")
+end)
+
+AdminCommands:NewButton("Infinite Yield", "FE ADMIN", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	print("Clicked")
+end)
+
+StupidShit:NewButton("Auto Disconnect", "Leave The Game", function()
+	_G.Enabled = true;
+
+	_G.CertainPlayer = false; --Set to false if you want it to kick you if anyone joins and true if you want to use playerlist
+
+	_G.Kick = true; --If it kicks you or just gives a notification that someone joined
+
+	playerlist = {"Name1","Name2","Name3","Name4"} -- Just add more if you want too
+	--------------------------------------------------------------------------------------SCRIPT
+	if(_G.Enabled == true) then
+
+		game:GetService("Players").PlayerAdded:Connect(function(user)
+			local Time = os.date("*t")
+
+			if(_G.CertainPlayer == false) then
+				if (_G.Kick == true) then
+					game.Players.LocalPlayer:Kick("A player joined: "..user.Name.." ,at: "..Time.hour..":"..Time.min)
+				end
+				if(_G.Kick == false) then
+					print(user.name.." Joined your game at ".." ,at: "..Time.hour..":"..Time.min.." and Wrote PlayersJoined.txt file in workspace/AutoDisconnect")
+					game.StarterGui:SetCore("SendNotification", {
+						Title = user.name.." Joined!";
+						Text = "At "..Time.hour..":"..Time.min.." and wrote PlayersJoined.txt in workspace/AutoDisconnect folder";
+						Duration = 5;
+					})
+
+					makefolder("AutoDisconnect")
+					writefile("AutoDisconnect\\PlayerJoined.txt",
+						user.name.." joined at "..Time.hour..":"..Time.min
+					)
+
+				end
+				if(_G.Kick == true) then
+					game.Players.LocalPlayer:Kick("A player joined: "..user.Name.." ,at: "..Time.hour..":"..Time.min)
+				end
+			end
+
+
+
+			if(_G.CertainPlayer == true) then
+
+				for i = 1, #playerlist do
+
+					if(user.Name == playerlist[i]) then
+						if(_G.Kick == true) then
+							game.Players.LocalPlayer:Kick("A player from the playerlist joined: "..playerlist[i].." ,at: "..Time.hour..":"..Time.min)
+						end
+
+						if(_G.Kick == false) then
+							print(playerlist[i].." from playerlist Joined your game at ".." ,at: "..Time.hour..":"..Time.min.." and Wrote PlayersJoinedLIST.txt file in workspace/AutoDisconnect")
+							game.StarterGui:SetCore("SendNotification", {
+								Title = playerlist[i].." Joined!";
+								Text = "At "..Time.hour..":"..Time.min.." and wrote PlayersJoinedLIST.txt in workspace/AutoDisconnect folder";
+								Duration = 5;
+							})    
+							makefolder("AutoDisconnect")
+							writefile("AutoDisconnect\\PlayerJoinedLIST.txt",
+								playerlist[i].." from playerlist joined at "..Time.hour..":"..Time.min
+							)
+						end
+					end
+				end
 			end
 		end)
+	end
+	print("Clicked")
+end)
 
-		game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(function()
-			if game:GetService("Lighting").ClockTime ~= 12 and game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime then
-				_G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
-				if not _G.FullBrightEnabled then
-					repeat
-						wait()
-					until _G.FullBrightEnabled
-				end
-				game:GetService("Lighting").ClockTime = 12
-			end
-		end)
+StupidShit:NewButton("Chat Hacks", "Enables Chat Hacks", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/straightmilk.lua'))()
+	print("Clicked")
+end)
 
-		game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(function()
-			if game:GetService("Lighting").FogEnd ~= 786543 and game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd then
-				_G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
-				if not _G.FullBrightEnabled then
-					repeat
-						wait()
-					until _G.FullBrightEnabled
-				end
-				game:GetService("Lighting").FogEnd = 786543
-			end
-		end)
+StupidShit:NewButton("Grammerly", "ik some of u need this", function()
+	loadstring(game:HttpGet("https://capybaras.wtf/chat/grammar.lua"))()
+	print("Clicked")
+end)
 
-		game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(function()
-			if game:GetService("Lighting").GlobalShadows ~= false and game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then
-				_G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
-				if not _G.FullBrightEnabled then
-					repeat
-						wait()
-					until _G.FullBrightEnabled
-				end
-				game:GetService("Lighting").GlobalShadows = false
-			end
-		end)
+Main:NewButton("Anti-Fling", "fuck off hackers", function()
+	local Services = setmetatable({}, {__index = function(Self, Index)
+		local NewService = game.GetService(game, Index)
+		if NewService then
+			Self[Index] = NewService
+		end
+		return NewService
+	end})
 
-		game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(function()
-			if game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient then
-				_G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
-				if not _G.FullBrightEnabled then
-					repeat
-						wait()
-					until _G.FullBrightEnabled
-				end
-				game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
-			end
-		end)
+	-- [ LocalPlayer ] --
+	local LocalPlayer = Services.Players.LocalPlayer
 
-		game:GetService("Lighting").Brightness = 1
-		game:GetService("Lighting").ClockTime = 12
-		game:GetService("Lighting").FogEnd = 786543
-		game:GetService("Lighting").GlobalShadows = false
-		game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+	-- // Functions \\ --
+	local function PlayerAdded(Player)
+		local Detected = false
+		local Character;
+		local PrimaryPart;
 
-		local LatestValue = true
-		spawn(function()
+		local function CharacterAdded(NewCharacter)
+			Character = NewCharacter
 			repeat
 				wait()
-			until _G.FullBrightEnabled
-			while wait() do
-				if _G.FullBrightEnabled ~= LatestValue then
-					if not _G.FullBrightEnabled then
-						game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
-						game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
-						game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
-						game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
-						game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
-					else
-						game:GetService("Lighting").Brightness = 1
-						game:GetService("Lighting").ClockTime = 12
-						game:GetService("Lighting").FogEnd = 786543
-						game:GetService("Lighting").GlobalShadows = false
-						game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+				PrimaryPart = NewCharacter:FindFirstChild("HumanoidRootPart")
+			until PrimaryPart
+			Detected = false
+		end
+
+		CharacterAdded(Player.Character or Player.CharacterAdded:Wait())
+		Player.CharacterAdded:Connect(CharacterAdded)
+		Services.RunService.Heartbeat:Connect(function()
+			if (Character and Character:IsDescendantOf(workspace)) and (PrimaryPart and PrimaryPart:IsDescendantOf(Character)) then
+				if PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 or PrimaryPart.AssemblyLinearVelocity.Magnitude > 100 then
+					if Detected == false then
+						game.StarterGui:SetCore("ChatMakeSystemMessage", {
+							Text = "Fling Exploit detected, Player: " .. tostring(Player);
+							Color = Color3.fromRGB(255, 200, 0);
+						})
 					end
-					LatestValue = not LatestValue
+					Detected = true
+					for i,v in ipairs(Character:GetDescendants()) do
+						if v:IsA("BasePart") then
+							v.CanCollide = false
+							v.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+							v.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+							v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
+						end
+					end
+					PrimaryPart.CanCollide = false
+					PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+					PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+					PrimaryPart.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0)
 				end
 			end
 		end)
 	end
 
-	_G.FullBrightExecuted = true
-	_G.FullBrightEnabled = not _G.FullBrightEnabled
-end)
-BreakingPointSection:NewToggle("Chat Logs", "Spy On everyone in the server", function(s)
-	loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+	-- // Event Listeners \\ --
+	for i,v in ipairs(Services.Players:GetPlayers()) do
+		if v ~= LocalPlayer then
+			PlayerAdded(v)
+		end
+	end
+	Services.Players.PlayerAdded:Connect(PlayerAdded)
+
+	local LastPosition = nil
+	Services.RunService.Heartbeat:Connect(function()
+		pcall(function()
+			local PrimaryPart = LocalPlayer.Character.PrimaryPart
+			if PrimaryPart.AssemblyLinearVelocity.Magnitude > 250 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 250 then
+				PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+				PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+				PrimaryPart.CFrame = LastPosition
+
+				game.StarterGui:SetCore("ChatMakeSystemMessage", {
+					Text = "You were flung. Neutralizing velocity.";
+					Color = Color3.fromRGB(255, 0, 0);
+				})
+			elseif PrimaryPart.AssemblyLinearVelocity.Magnitude < 50 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 then
+				LastPosition = PrimaryPart.CFrame
+			end
+		end)
+	end)
+	print("Clicked")
 end)
 
--- Arsenal
+Main:NewButton("Invisibility", "Go Invisible!", function()
+	local ScriptStarted = false
+local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
+local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
+local NoClip = false --Will make your fake character no clip.
 
-local Arsenal = Window:NewTab("Arsenal")
-local ArsenalSection = Arsenal:NewSection("Arsenal")
-ArsenalSection:NewToggle("OWL Hub", "The Perfect arsenal gui!", function(s)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+local Player = game:GetService("Players").LocalPlayer
+local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+
+local IsInvisible = false
+
+RealCharacter.Archivable = true
+local FakeCharacter = RealCharacter:Clone()
+local Part
+Part = Instance.new("Part", workspace)
+Part.Anchored = true
+Part.Size = Vector3.new(200, 1, 200)
+Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
+Part.CanCollide = true
+FakeCharacter.Parent = workspace
+FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+for i, v in pairs(RealCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = FakeCharacter
+  end
+end
+if Transparency then
+  for i, v in pairs(FakeCharacter:GetDescendants()) do
+      if v:IsA("BasePart") then
+          v.Transparency = 0.7
+      end
+  end
+end
+local CanInvis = true
+function RealCharacterDied()
+  CanInvis = false
+  RealCharacter:Destroy()
+  RealCharacter = Player.Character
+  CanInvis = true
+  isinvisible = false
+  FakeCharacter:Destroy()
+  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+
+  RealCharacter.Archivable = true
+  FakeCharacter = RealCharacter:Clone()
+  Part:Destroy()
+  Part = Instance.new("Part", workspace)
+  Part.Anchored = true
+  Part.Size = Vector3.new(200, 1, 200)
+  Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
+  Part.CanCollide = true
+  FakeCharacter.Parent = workspace
+  FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+  for i, v in pairs(RealCharacter:GetChildren()) do
+      if v:IsA("LocalScript") then
+          local clone = v:Clone()
+          clone.Disabled = true
+          clone.Parent = FakeCharacter
+      end
+  end
+  if Transparency then
+      for i, v in pairs(FakeCharacter:GetDescendants()) do
+          if v:IsA("BasePart") then
+              v.Transparency = 0.7
+          end
+      end
+  end
+ RealCharacter.Humanoid.Died:Connect(function()
+ RealCharacter:Destroy()
+ FakeCharacter:Destroy()
+ end)
+ Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+end
+RealCharacter.Humanoid.Died:Connect(function()
+ RealCharacter:Destroy()
+ FakeCharacter:Destroy()
+ end)
+Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+local PseudoAnchor
+game:GetService "RunService".RenderStepped:Connect(
+  function()
+      if PseudoAnchor ~= nil then
+          PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+      end
+       if NoClip then
+      FakeCharacter.Humanoid:ChangeState(11)
+       end
+  end
+)
+
+PseudoAnchor = FakeCharacter.HumanoidRootPart
+local function Invisible()
+  if IsInvisible == false then
+      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+      RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = StoredCF
+      RealCharacter.Humanoid:UnequipTools()
+      Player.Character = FakeCharacter
+      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
+      PseudoAnchor = RealCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = false
+          end
+      end
+
+      IsInvisible = true
+  else
+      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+     
+      RealCharacter.HumanoidRootPart.CFrame = StoredCF
+     
+      FakeCharacter.Humanoid:UnequipTools()
+      Player.Character = RealCharacter
+      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+      PseudoAnchor = FakeCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = true
+          end
+      end
+      IsInvisible = false
+  end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(
+  function(key, gamep)
+      if gamep then
+          return
+      end
+      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
+          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
+              Invisible()
+          end
+      end
+  end
+)
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible Toggle Loaded",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
+	print("Clicked")
 end)
-ArsenalSection:NewToggle("Dex Hub", "The Perfect arsenal gui!", function(s)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()
+
+FE:NewButton("No Face", "Removes Your face", function()
+	game.Players.LocalPlayer.Character.Head.face:Destroy()
+	print("Clicked")
+end)
+
+FE:NewButton("Naked", "Makes You Naked", function()
+	for i, clothes in pairs(game:GetService('Players').LocalPlayer.Character:GetChildren()) do
+		if clothes:IsA("Shirt") then
+			clothes:Destroy();
+		elseif clothes:IsA("Pants") then
+			clothes:Destroy();
+		elseif clothes:IsA("Accessory") then
+			if clothes.Name == "HOODOWN" then
+				clothes:Destroy();
+			elseif clothes.Name == "HOOD" then
+				clothes:Destroy();
+			elseif clothes.Name == "HOODHAIR" then
+				clothes:Destroy();
+
+			end
+		end
+	end;
+	print("Clicked")
+end)
+
+Main:NewButton("God Mode", "Never Die!", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/joke%20anticheat.lua'),true))()
+	print("Clicked")
+end)
+
+Combat:NewButton("Melee Kill Aura", "Melee Kill Aura", function()
+	--// Setting \\--
+	local range = 22
+
+	--// Variable \\--
+	local player = game:GetService("Players").LocalPlayer
+
+	--// Script \\--
+	game:GetService("RunService").RenderStepped:Connect(function()
+		local p = game.Players:GetPlayers()
+		for i = 2, #p do local v = p[i].Character
+			if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and player:DistanceFromCharacter(v.HumanoidRootPart.Position) <= range then
+				local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+				if tool and tool:FindFirstChild("Handle") then
+					tool:Activate()
+					for i,v in next, v:GetChildren() do
+						if v:IsA("BasePart") then
+							firetouchinterest(tool.Handle,v,0)
+							firetouchinterest(tool.Handle,v,1)
+						end
+					end
+				end
+			end
+		end
+	end)
+	print("Clicked")
+end)
+
+GameImprovement:NewButton("Insane Graphics", "Enhances Graphics", function()
+	print("Clicked")
+end)
+
+Combat:NewButton("Noclip (E)", "Walk Through Walls", function()
+	local StealthMode = true 
+
+	local Indicator
+
+	if not StealthMode then
+		local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
+		Indicator = Instance.new("TextLabel", ScreenGui)
+		Indicator.AnchorPoint = Vector2.new(0, 1)
+		Indicator.Position = UDim2.new(0, 0, 1, 0)
+		Indicator.Size = UDim2.new(0, 200, 0, 50)
+		Indicator.BackgroundTransparency = 1
+		Indicator.TextScaled = true
+		Indicator.TextStrokeTransparency = 0
+		Indicator.TextColor3 = Color3.new(0, 0, 0)
+		Indicator.TextStrokeColor3 = Color3.new(1, 1, 1)
+		Indicator.Text = "Noclip: Enabled"
+	end
+
+	local noclip = false
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+
+	local mouse = player:GetMouse()
+
+	mouse.KeyDown:Connect(function(key)
+		if key == "e" then
+			noclip = not noclip
+
+			if not StealthMode then
+				Indicator.Text = "Noclip: " .. (noclip and "Enabled" or "Disabled")
+			end
+		end
+	end)
+
+	while true do
+		player = game.Players.LocalPlayer
+		character = player.Character
+
+		if noclip then
+			for _, v in pairs(character:GetDescendants()) do
+				pcall(function()
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end)
+			end
+		end
+
+		game:GetService("RunService").Stepped:wait()
+	end
+	print("Clicked")
+end)
+
+Animations:NewButton("Krystal Dance", "Do The Krystal Dance", function()
+	loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/e51327540d1ba5ede244c459dbdb5a0e/raw/6320fe344ac51a311ef7c9f8d5c3924b1a7c3969/Krystal%2520Dance'))()
+	print("Clicked")
+end)
+
+Animations:NewButton("Tons Of Animations", "Dance", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+	print("Clicked")
+end)
+
+AdminCommands:NewButton("Reviz Admin", "reviz what a guy", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
+	print("Clicked")
 end)
